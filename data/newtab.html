@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Tab</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/kube.min.css" />
+    <script src="addon.js"></script>
+
+</head>
+<body>
+<header class="group">
+<nav class="navbar nav-fullwidth navbar-left">
+    <ul>
+        <li><a id="history" href="chrome://browser/content/history/history-panel.xul" class="chromeurls">History</a></li>
+        <li><a id="bookmarks" href="chrome://browser/content/places/places.xul" class="chromeurls">Bookmarks</a></li>
+        <li><a id="addons" href="chrome://mozapps/content/extensions/extensions.xul" class="chromeurls">Extensions</a></li>
+		<li></li>
+    </ul>
+</nav>
+<nav class="navbar navbar-right">
+	<ul>
+		<li><a href="https://twitter.com/">Twitter   </a></li>
+		<li><a href="https://facebook.com/">Facebook   </a></li>
+		<li><a href="https://mail.google.com/">Gmail   </a></li>
+		<li><a href="https://plus.google.com/">Google+   </a></li>
+		<li><a href="#">   </a></li>
+	</ul>
+</nav>
+</header>
+
+
+
+
+
+<div class="units-row">
+
+
+	
+	
+    <div class="unit-33">
+		<p class="h4 color-gray-60 ">Search</p>
+		<form class="forms forms-inline">
+			<input id="txtSearch" type="search" name="q" class="width-80" placeholder="Search for something" />
+			<span class="btn-append">
+				<button id="btnSearch" class="btn btn-smaller">Search</button>
+			</span>
+			<p>
+			<p class="h5 color-gray-60 ">Search Settings</p>
+			<label>Web Search
+			<ul class="forms-inline-list">
+				<li>
+					<input type="checkbox" name="cbGoogle" id="cbGoogle" checked>
+					<label for="cbGoogle">Google</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbBing" id="cbBing">
+					<label for="cbBing">Bing</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbYahoo" id="cbYahoo">
+					<label for="cbYahoo">Yahoo</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbDuckDuckGo" id="cbDuckDuckGo">
+					<label for="cbDuckDuckGo">DuckDuckGo</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbExalead" id="cbExalead">
+					<label for="cbExalead">Exalead</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbGigablast" id="cbGigablast">
+					<label for="cbGigablast">Gigablast</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbFaroo" id="cbFaroo">
+					<label for="cbFaroo">Faroo</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbQwant" id="cbQwant">
+					<label for="cbQwant">Qwant</label>
+				</li>
+				
+				<li>
+					<input type="checkbox" name="cbYandex" id="cbYandex">
+					<label for="cbYandex">Yandex</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbBaidu" id="cbBaidu">
+					<label for="cbBaidu">Baidu</label>
+				</li>
+				
+			</ul>
+			</label>
+			
+			<label>Metasearch
+			<ul class="forms-inline-list">
+				<li>
+					<input type="checkbox" name="cbHotbot" id="cbHotbot">
+					<label for="cbHotbot">Hotbot</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbDogpile" id="cbDogpile">
+					<label for="cbDogpile">Dogpile</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbWebcrawler" id="cbWebcrawler">
+					<label for="cbWebcrawler">Webcrawler</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbExcite" id="cbExcite">
+					<label for="cbExcite">Excite</label>
+				</li>
+				
+			</ul>
+			</label>
+			
+			<label>Social
+			<ul class="forms-inline-list">
+				<li>
+					<input type="checkbox" name="cbFacebook" id="cbFacebook">
+					<label for="cbFacebook">Facebook</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbTwitter" id="cbTwitter">
+					<label for="cbTwitter">Twitter</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbGooglePlus" id="cbGooglePlus">
+					<label for="cbGooglePlus">Google+</label>
+				</li>
+				
+			</ul>
+			</label>
+			<label>Shopping
+			<ul class="forms-inline-list">
+				<li>
+					<input type="checkbox" name="cbEbay" id="cbEbay">
+					<label for="cbEbay">Ebay</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbAmazon" id="cbAmazon">
+					<label for="cbAmazon">Amazon</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbAliExpress" id="cbAliExpress">
+					<label for="cbAliExpress">AliExpress</label>
+				</li>
+			</ul>
+			</label>
+			<label>Images
+			<ul class="forms-inline-list">
+				<li>
+					<input type="checkbox" name="cbSmugmug" id="cbSmugmug">
+					<label for="cbSmugmug">Smugmug</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbFlickr" id="cbFlickr">
+					<label for="cbFlickr">Flickr</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbPhotobucket" id="cbPhotobucket">
+					<label for="cbPhotobucket">Photobucket</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbDeviantArt" id="cbDeviantArt">
+					<label for="cbDeviantArt">Deviant Art</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbImgur" id="cbImgur">
+					<label for="cbImgur">Imgur</label>
+				</li>
+				
+			</ul>
+			</label>
+			
+			<label>Video
+			<ul class="forms-inline-list">
+				<li>
+					<input type="checkbox" name="cbYouTube" id="cbYouTube">
+					<label for="cbYouTube">YouTube</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbVimeo" id="cbVimeo">
+					<label for="cbVimeo">Vimeo</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbGoogleVideo" id="cbGoogleVideo">
+					<label for="cbGoogleVideo">Google Video</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbBingVideo" id="cbBingVideo">
+					<label for="cbBingVideo">Bing Video</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbYahooVideo" id="cbYahooVideo">
+					<label for="cbYahooVideo">Yahoo Video</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbHulu" id="cbHulu">
+					<label for="cbHulu">Hulu</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbVeoh" id="cbVeoh">
+					<label for="cbVeoh">Veoh</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbBreak" id="cbBreak">
+					<label for="cbBreak">Break</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbMetacafe" id="cbMetacafe">
+					<label for="cbMetacafe">Metacafe</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbDailymotion" id="cbDailymotion">
+					<label for="cbDailymotion">Dailymotion</label>
+				</li>
+				
+				<li>
+					<input type="checkbox" name="cbWMHT" id="cbWMHT">
+					<label for="cbWMHT">WMHT (NY PBS)</label>
+				</li>
+				
+			</ul>
+			</label>
+			
+			<label>Recipes
+			<ul class="forms-inline-list">
+				<li>
+					<input type="checkbox" name="cbFoodie" id="cbFoodie" >
+					<label for="cbFoodie">Foodie</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbYummly" id="cbYummly">
+					<label for="cbYummly">Yummly</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbGoogleRecipes" id="cbGoogleRecipes">
+					<label for="cbGoogleRecipes">Google Recipes</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbMyRecipes" id="cbMyRecipes">
+					<label for="cbMyRecipes">My Recipes</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbFood" id="cbFood">
+					<label for="cbFood">Food.com</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbCookingChannel" id="cbCookingChannel">
+					<label for="cbCookingChannel">Cooking Channel</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbEatingWell" id="cbEatingWell">
+					<label for="cbEatingWell">Eating Well</label>
+				</li>
+				<li>
+					<input type="checkbox" name="cbBettyCrocker" id="cbBettyCrocker">
+					<label for="cbBettyCrocker">Betty Crocker</label>
+				</li>
+				
+			</ul>
+			</label>
+			
+			
+			
+		</form>
+	</div>
+	<div class="unit-33">
+		<p class="h4 color-gray-60">Top Sites</p>
+		<div id="mostVisited_div"></div>
+	
+		<p class="h4 color-gray-60">Recently Bookmarked</p>
+		<div id="recentlyBookmarked_div"></div>
+	</div>
+	<div class="unit-33">
+		<p class="h4 color-gray-60">Recently Visited</p>
+		<div id="recentlyVisited_div"></div>
+	</div>
+	
+</div>
+
+
+</html>
