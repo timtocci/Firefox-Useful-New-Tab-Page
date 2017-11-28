@@ -73,6 +73,7 @@ function getRecentlyVisited() {
  */
 function onChromeUrlClick(e) {
     e.preventDefault();
+    // nothing works to open xul addresses now
     //chrome.tabs.create({url: e.target.href});
     //window.location = e.target.href;
     return false;
