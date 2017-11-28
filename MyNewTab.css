@@ -1,0 +1,128 @@
+button{
+    cursor: pointer;
+}
+.tabset{
+    cursor:pointer;
+
+}
+.tabset_title{
+    /*background-color: ButtonFace;*/
+    border: 1px solid #999;
+    display:flex;
+    justify-content: space-between;
+}
+.tabset_title:hover{
+    color:#0000ff;
+}
+.tabset_title_expand {
+    cursor: pointer;
+    color: #999999;
+    border: 1px solid #999999;
+    font-size: 125%;
+    text-align: center;
+    width:21px;
+    height: 21px;
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+.tabset_title_expand:hover{
+    background-color: #ddddff;
+    color: #0000ff;
+    border: 1px solid #00f;
+}
+.tabset_title_text{
+
+}
+.tabset_title_text_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.tabset_title_delete{
+    cursor: pointer;
+    color: #999999;
+    font-size: 105%;
+    width:21px;
+    height: 21px;
+    text-align: center;
+    border: 1px solid #999999;
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    display:none;
+}
+.tabset_title_delete:hover{
+    background-color: #ffdddd ;
+    color: #ff0000;
+    border: 1px solid #f00;
+}
+.tabset_items{
+    background-color: #eeeeff;
+    display: none;
+}
+.tabset_item{
+    background-color: #f0f8ff;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #f0f8ff;
+    display: flex;
+    justify-content: space-between;
+}
+.tabset_item:hover{
+    border: 1px solid #999999;
+    color: #0000ff;
+
+}
+.tabset_item_title{
+    font-size: 95%;
+}
+.tabset_item_url{
+    font-size: 75%;
+}
+.tabset_item_delete{
+    cursor: pointer;
+    font-size: 75%;
+    width:18px;
+    height: 18px;
+    text-align: center;
+    margin-left: 1px;
+    margin-top: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+.tabset_item_delete:hover{
+    background-color: #ffdddd ;
+    color: #ff0000;
+    border: 1px solid #f00;
+}
+
+
+#btnCreateTabSet{
+    width: 100%;
+    /*background-image:none;*/
+    /*text-decoration: underline;*/
+}
+#tabsetdisplay > button{
+    text-align: right;
+    width:100%;
+    /*background-color: rgb(221, 221, 221);*/
+}
+#txtSearch{
+    border-radius: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.urllist{
+
+}
+.urllist > ul{
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.urllist > ul > li{
+    list-style: none;
+    border-bottom: 1px solid white;
+}

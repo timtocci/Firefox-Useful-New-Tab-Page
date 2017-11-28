@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Tab</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/kube.min.css" />
+	<link rel="stylesheet" href="chromish.css" />
+	<link rel="stylesheet" href="MyNewTab.css" />
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="addon.js"></script>
+</head>
+
+<body>
+<header class="group">
+	<nav class="navbar nav-fullwidth navbar-left">
+		<!-- Security now restricts new tabs like these
+		<ul>
+			<li><a id="history" href="chrome://browser/content/history/history-panel.xul" class="chromeurls">History</a></li>
+	        <li><a id="bookmarks" href="chrome://browser/content/places/places.xul" class="chromeurls">Bookmarks</a></li>
+	        <li><a id="addons" href="chrome://mozapps/content/extensions/extensions.xul" class="chromeurls">Extensions</a></li>
+			<li></li>
+		</ul>
+		-->
+	</nav>
+	<nav class="navbar navbar-right">
+		<ul>
+			<li><a href="https://twitter.com/">Twitter   </a></li>
+			<li><a href="https://facebook.com/">Facebook   </a></li>
+			<li><a href="https://mail.google.com/">Gmail   </a></li>
+			<li><a href="https://plus.google.com/">Google+   </a></li>
+			<li><a href="#">   </a></li>
+		</ul>
+	</nav>
+</header>
+<div class="units-row">
+	<div class="unit-25">
+		<form class="forms forms-inline">
+			<label for="txtSearch"><strong>Search</strong></label>
+			<input id="txtSearch" type="search" name="q" class="width-80" placeholder="Search for something" />
+			<div class="button-container">
+				<!--<button id="btnCreateSearchSet" class="">Create Search Set</button>-->
+				<button id="btnSearch">Search</button>
+			</div>
+			<p>
+			<p class="h5 color-gray-60 ">Search Settings</p>
+			<div id="search_settings_container"></div>
+		</form>
+	</div>
+	<div class="unit-25">
+		<p class="h4 color-gray-60">Top Sites</p>
+		<hr>
+		<div id="mostVisited_div" class="urllist"></div>
+
+		<p class="h4 color-gray-60">Recently Bookmarked</p>
+		<hr>
+		<div id="recentlyBookmarked_div" class="urllist"></div>
+	</div>
+	<div class="unit-25">
+		<p class="h4 color-gray-60">Recently Visited</p>
+		<hr>
+		<div id="recentlyVisited_div" class="urllist"></div>
+	</div>
+	<div class="unit-25">
+		<!--<button id="btnCreateTabSet"><strong>Create Tab Set</strong> </button>-->
+		<button id="btnCreateTabSet">Create Tab Set </button>
+		<div id="tabset_display">
+			<div class="tabset">
+				<div class="tabset_title">
+					<span class="tabset_title_expand">
+						<span class="tabset_expand_text">+</span>
+					</span>
+					<span class="tabset_title_text_wrapper">
+						<span class="tabset_title_text">Sample Title Sample Title Sample Title</span>
+						<span class="tabset_title_delete">X</span>
+					</span>
+			</div>
+
+				<div class="tabset_items">
+					<div class="tabset_item">
+						<div class="tabset_item_wrapper">
+							<div class="tabset_item_title">Some Url</div>
+							<div class="tabset_item_url">http://someurl.com</div>
+						</div>
+						<div class="tabset_item_delete">X</div>
+					</div>
+					<div class="tabset_item">
+						<div class="tabset_item_wrapper">
+							<div class="tabset_item_title">Some Url</div>
+							<div class="tabset_item_url">http://someurl.com</div>
+						</div>
+						<div class="tabset_item_delete">X</div>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="tabset">
+				<div class="tabset_title">
+					<span class="tabset_title_expand">
+						<span class="tabset_expand_text">+</span>
+					</span>
+					<span class="tabset_title_text_wrapper">
+						<span class="tabset_title_text">Sample Title Sample Title Sample Title</span>
+						<span class="tabset_title_delete">X</span>
+					</span>
+				</div>
+
+				<div class="tabset_items">
+					<div class="tabset_item">
+						<div class="tabset_item_wrapper">
+							<div class="tabset_item_title">Some Url</div>
+							<div class="tabset_item_url">http://someurl.com</div>
+						</div>
+						<div class="tabset_item_delete">X</div>
+					</div>
+					<div class="tabset_item">
+						<div class="tabset_item_wrapper">
+							<div class="tabset_item_title">Some Url</div>
+							<div class="tabset_item_url">http://someurl.com</div>
+						</div>
+						<div class="tabset_item_delete">X</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

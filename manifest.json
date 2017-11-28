@@ -1,0 +1,33 @@
+{
+  "name": "Useful New Tab Page",
+  "version": "2.0.0",
+  "id": "jid1-wpeLy0aB4veaxA@jetpack",
+  "author": "Timothy Tocci",
+  "homepage_url": "https://addons.mozilla.org/en-US/firefox/addon/useful-new-tab-page/",
+  "permissions": [
+    "bookmarks",
+    "history",
+    "topSites",
+    "contextMenus",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["jquery-3.1.1.min.js", "background.js"]
+  },
+  "options_page": "options.html",
+  "options_ui": {
+	"browser_style": true,
+	"open_in_tab": false,
+    "page": "options.html"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "MyNewTab.html"
+  },
+  "icons" : {
+    "48" : "icon_48.png",
+    "96" : "icon_96.png"
+  },
+  "manifest_version": 2
+}
