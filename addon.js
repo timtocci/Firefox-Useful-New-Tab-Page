@@ -73,7 +73,8 @@ function getRecentlyVisited() {
  */
 function onChromeUrlClick(e) {
     e.preventDefault();
-    chrome.tabs.create({url: e.target.href});
+    //chrome.tabs.create({url: e.target.href});
+    //window.location = e.target.href;
     return false;
 }
 
