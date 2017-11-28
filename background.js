@@ -401,7 +401,6 @@ chrome.runtime.onMessage.addListener(
                         }
                     }
                 });
-
                 break;
             case "create_tabset":
                 let tabset_folder = {
@@ -418,19 +417,16 @@ chrome.runtime.onMessage.addListener(
                         chrome.bookmarks.create(url, ()=> {});
                     }
                 });
-
                 break;
             case "delete_tabset":
                 chrome.bookmarks.removeTree(msg.payload, ()=> {
                     sendResponse({type: "delete_tabset_response", payload: []});
                 });
-
                 break;
             case "delete_tabset_item":
                 chrome.bookmarks.remove(msg.payload, ()=> {
                     sendResponse({type: "delete_tabset_item_response", payload: []});
                 });
-
                 break
         }
         // async response
