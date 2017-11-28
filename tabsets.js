@@ -73,7 +73,6 @@ let internal_titles = [
 ];
 
 $( document ).ready(function() {
-    let d = new Date();
     $("#tabsetName")[0].value = getCurrentDateString();
     $("#tabsetName")[0].select();
     let objQueryInfo = {
