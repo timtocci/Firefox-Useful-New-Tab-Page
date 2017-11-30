@@ -352,10 +352,8 @@ function setupTabSets() {
     let bookmarksBar;
     chrome.bookmarks.getTree(function (nodesArr) {
         for (let node of nodesArr) {
-            //console.log(node)
             for (let nd of node.children) {
                 if (nd.title === "Other bookmarks") {
-                    //console.log(nd)
                     bookmarksBar = nd;
                 }
             }

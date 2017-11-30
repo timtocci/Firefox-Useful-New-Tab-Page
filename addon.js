@@ -266,21 +266,6 @@ window.onload = function () {
         createTabsetItems(response.payload)
     });
 
-
-
-    //var createbutton = document.getElementById('btnCreateSearchSet');
-    //createbutton.addEventListener('click', function (e) {
-    //    e.preventDefault();
-    //    var objQueryInfo = {
-    //        windowType: "normal"
-    //    };
-    //    chrome.runtime.getBackgroundPage(function (bgPage) {
-    //        chrome.tabs.query(objQueryInfo, function (tabArray) {
-    //            console.log(tabArray);
-    //            replaceTab('searchsets.html');
-    //        });
-    //    });
-    //});
     var createtabsetbutton = document.getElementById('btnCreateTabSet');
     createtabsetbutton.addEventListener('click', function (e) {
         e.preventDefault();
