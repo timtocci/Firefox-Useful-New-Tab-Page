@@ -2,6 +2,11 @@
   "name": "Useful New Tab Page",
   "version": "2.0.0",
   "id": "jid1-wpeLy0aB4veaxA@jetpack",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "56.0a1"
+    }
+  },
   "author": "Timothy Tocci",
   "homepage_url": "https://addons.mozilla.org/en-US/firefox/addon/useful-new-tab-page/",
   "permissions": [
